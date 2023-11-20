@@ -37,6 +37,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
+			},
+			getData: async () => {
+				const url = 'https://www.swapi.tech/api/';
+				const options = {
+					method: 'GET',
+					hearders: { 'Content-Type': 'application/json'},
+					body: JSON.stringify([])
+				};
+				const response = await fetch(url, options);
+				if (response.ok) {
+					const data = await response.json()
+					console.log(data);
+					setStore(data);
+				} else {
+					console.log('Error: ', response.status, response.statusText)
+				}
 			}
 		}
 	};
