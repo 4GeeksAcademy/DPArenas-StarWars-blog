@@ -11,9 +11,9 @@ const urlImg = 'https://starwars-visualguide.com/Linkssets/img/characters/1.jpg'
 export const Home = () => (
 	<Container className="bg-black">
 		<Row>
-			<Col>
+			<Col xs={6} md={4}>
 				<Link to="#/characters?page=1">
-					<Card className="bg-black text-white"> 
+					<Card className="bg-black text-white text-center my-4">
 						<CardImg className="overlay" src="https://starwars-visualguide.com/assets/img/categories/character.jpg" />
 						<Card.ImgOverlay>
 							<span className="category-title tc-red-600 display-block jedi-font">Characters</span>
@@ -21,65 +21,53 @@ export const Home = () => (
 					</Card>
 				</Link>
 			</Col>
-			<Col>
+			<Col xs={6} md={4} >
 				<Link to="#/films?page=1">
-					<Card className="bg-black text-white">
-						<div id="films" className="">
-							<CardImg className="overlay" src="https://starwars-visualguide.com/assets/img/categories/films.jpg" />
-							<Card.ImgOverlay>
-								<span className="category-title tc-yellow-400 display-block jedi-font">Films</span>
-							</Card.ImgOverlay>
-						</div>
+					<Card className="bg-black text-white text-center my-4">
+						<CardImg className="overlay" src="https://starwars-visualguide.com/assets/img/categories/films.jpg" />
+						<Card.ImgOverlay>
+							<span className="category-title tc-yellow-400 display-block jedi-font">Films</span>
+						</Card.ImgOverlay>
 					</Card>
 				</Link>
 			</Col>
-			<Col>
+			<Col xs={6} md={4}>
 				<Link to="#/species?page=1">
-					<Card className="bg-black text-white">
-						<div id="species" className="">
-							<CardImg className="img-overlay" src="https://starwars-visualguide.com/assets/img/categories/species.jpg" />
-							<Card.ImgOverlay>
-								<span className="category-title tc-deep-orange-600 display-block jedi-font">Species</span>
-							</Card.ImgOverlay>
-						</div>
+					<Card className="bg-black text-white text-center my-4">
+						<CardImg className="img-overlay" src="https://starwars-visualguide.com/assets/img/categories/species.jpg" />
+						<Card.ImgOverlay>
+							<span className="category-title tc-deep-orange-600 display-block jedi-font">Species</span>
+						</Card.ImgOverlay>
 					</Card>
 				</Link>
 			</Col>
-		</Row>
-		<Row>
-			<Col>
+			<Col xs={6} md={4}>
 				<Link to="#/starships?page=1">
-					<Card className="bg-black text-white">
-						<div id="starships" className="">
-							<CardImg className="img-overlay" src="https://starwars-visualguide.com/assets/img/categories/starships.jpg" />
-							<Card.ImgOverlay>
-								<span className="category-title tc-white-1 display-block jedi-font">Starships</span>
-							</Card.ImgOverlay>
-						</div>
+					<Card className="bg-black text-white text-center my-4">
+						<CardImg className="img-overlay" src="https://starwars-visualguide.com/assets/img/categories/starships.jpg" />
+						<Card.ImgOverlay>
+							<span className="category-title tc-white-1 display-block jedi-font">Starships</span>
+						</Card.ImgOverlay>
 					</Card>
 				</Link>
 			</Col>
-			<Col>
+			<Col xs={6} md={4}>
 				<Link to="#/vehicles?page=1">
-					<Card className="bg-black text-white">
-						<div id="vehicles" className="">
-							<CardImg className="img-overlay" src="https://starwars-visualguide.com/assets/img/categories/vehicles.jpg" />
-							<Card.ImgOverlay>
-								<span className="category-title tc-blue-200 display-block jedi-font">`ehicles</span>
-							</Card.ImgOverlay>
-						</div>
+					<Card className="bg-black text-white text-center my-4">
+						<CardImg className="img-overlay" src="https://starwars-visualguide.com/assets/img/categories/vehicles.jpg" />
+						<Card.ImgOverlay>
+							<span className="">Vehicles</span>
+						</Card.ImgOverlay>
 					</Card>
 				</Link>
 			</Col>
-			<Col>
+			<Col xs={6} md={4}>
 				<Link to="#/planets?page=1">
-					<Card className="bg-black text-white">
-						<div id="planets" className="">
-							<CardImg className="img-overlay" src="https://starwars-visualguide.com/assets/img/categories/planets.jpg" />
-							<Card.ImgOverlay>
-								<span className="category-title tc-yellow-400 display-block jedi-font">Planets</span>
-							</Card.ImgOverlay>
-						</div>
+					<Card className="bg-black text-white text-center my-4">
+						<CardImg className="img-overlay" src="https://starwars-visualguide.com/assets/img/categories/planets.jpg" />
+						<Card.ImgOverlay>
+							<span className="category-title tc-yellow-400 display-block jedi-font">Planets</span>
+						</Card.ImgOverlay>
 					</Card>
 				</Link>
 			</Col>

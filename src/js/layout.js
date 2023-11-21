@@ -7,7 +7,7 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
-import NavbarLayout from "./component/NavbarLayout.jsx";
+import { NavbarLayout } from "./component/NavbarLayout.jsx";
 import { Footer } from "./component/footer";
 
 //create your first component
@@ -18,8 +18,7 @@ const Layout = () => {
 
 	return (
 		<div className="bg-dark">
-			<BrowserRouter basename={basename}>
-				<ScrollToTop>
+			<BrowserRouter basename={basename}>	
 					<NavbarLayout />
 					<Routes>
 						<Route path="/" element={<Home />} />
@@ -28,7 +27,6 @@ const Layout = () => {
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
 					<Footer />
-				</ScrollToTop>
 			</BrowserRouter>
 		</div>
 	);
