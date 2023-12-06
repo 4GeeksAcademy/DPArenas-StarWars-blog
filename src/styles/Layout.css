@@ -1,0 +1,21 @@
+body {
+    background-image: url('https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg');
+    background-size: 100%; 
+    background-repeat: repeat;
+    height: 100%
+}
+
+/* .navbar {
+    background-image: url('https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg');
+    background-size: 100%; 
+    background-repeat: repeat;
+    height: 100%;
+    background-color: transparent;
+} */
+Footer {
+    /* background-image: url('https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg'); */
+    background-size: 100%; 
+    /* background-repeat: repeat; */
+    /* height: 100%; */
+    background-color: transparent;
+}
